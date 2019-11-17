@@ -18,10 +18,10 @@ Days={'0':'all','1':'monday','2':'tuesday','3':'wednesday','4':'thursday','5':'f
 def get_filters():
 
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks user to specify a city, month, and day to analyze and explore .
 
     Returns:
-        (str) city - name of the city to analyze
+        (str) city - name of the city to analyze and explore
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
@@ -56,14 +56,14 @@ def get_filters():
 
 def load_data(city, month, day):
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Loads data for the specified city and filters by month and day if applicable .
 
     Args:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
+        (str) city - name of the city to analyze and explore
+        (str) month - name of the month to filter by, or "all" to apply no month filter 
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     Returns:
-        df - Pandas DataFrame containing city data filtered by month and day
+        df - Pandas DataFrame containing city data filtered by month and day if applicable 
     """
     df=pd.read_csv(CITY_DATA [city])
     
